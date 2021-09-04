@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+
+    <title>~$ NOTHING TO SEE HERE</title>
+    <style>
+        :root {
+            --light-blue: #0088ff;
+            --dark-blue: #0000aa;
+        }
+
+        body {
+            background: var(--light-blue);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            background: var(--dark-blue);
+            color: var(--light-blue);
+            font-family: monospace;
+            padding: 1em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .blink {
+            animation-duration: 1s;
+            animation-name: blink;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            51% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 class="blink">~$ NOTHING TO SEE HERE</h1>
+    </section>
+</body>
+
+</html>
